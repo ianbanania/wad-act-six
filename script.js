@@ -39,3 +39,13 @@
 
         });
 
+
+        // Part 4 - Keyboard Challenge
+
+        document.addEventListener("keydown", (event) => {
+
+            if (event.key === "Escape") {
+                welcomeMessage.textContent = "";
+            }
+
+        });
