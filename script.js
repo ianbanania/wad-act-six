@@ -7,3 +7,23 @@
         nameInput.addEventListener("input", () => {
             welcomeMessage.textContent = nameInput.value;
         });
+
+
+        // Part 2 - Handle Form Submission
+
+        const studentForm = document.querySelector("#studentForm");
+        const courseInput = document.querySelector("#courseInput");
+        const registrationMessage =
+            document.querySelector("#registrationMessage");
+
+        studentForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            const name = nameInput.value;
+            const course = courseInput.value;
+
+            registrationMessage.textContent =
+                "Registration successful! " + name + " - " + course;
+
+        });
